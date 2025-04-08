@@ -1,0 +1,58 @@
+{
+	"name": "handloom",
+	"version": "1.0.0",
+	"description": "A snazzy React + TypeScript component library.",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/index.d.ts",
+	"files": ["dist"],
+	"scripts": {
+		"lint": "biome lint .",
+		"format": "biome format . --write",
+		"build": "rollup --config",
+		"pack": "npm pack",
+		"prepare": "husky install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/csivitu/handloom-ui-library.git"
+	},
+	"keywords": [
+		"ui",
+		"component",
+		"react",
+		"typescript",
+		"next",
+		"nextjs",
+		"reactjs",
+		"vite",
+		"tailwind",
+		"css",
+		"tailwindcss"
+	],
+	"author": "v1br",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/v1br/handloom-component-library/issues"
+	},
+	"homepage": "https://github.com/v1br/handloom-component-library#readme",
+	"peerDependencies": {
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"tailwindcss": "^3.4.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@rollup/plugin-commonjs": "^28.0.3",
+		"@rollup/plugin-node-resolve": "^16.0.1",
+		"@rollup/plugin-typescript": "^12.1.2",
+		"@types/react": "^19.1.0",
+		"rollup": "^4.39.0",
+		"rollup-plugin-dts": "^6.2.1",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"tailwindcss": "^3.4.0",
+		"tslib": "^2.8.1",
+		"typescript": "^5.8.3",
+		"husky": "^8.0.0"
+	}
+}
